@@ -1,28 +1,29 @@
-set -l execs annotate      \
-             cap           \
-             capify        \
-             cucumber      \
-             dashing       \
-             guard         \
-             kitchen       \
-             middleman     \
-             nanoc         \
-             puma          \
-             rackup        \
-             rainbows      \
-             rake          \
-             rspec         \
-             rubocop       \
-             ruby          \
-             shotgun       \
-             sidekiq       \
-             spec          \
-             spinach       \
-             spork         \
-             thin          \
-             thor          \
-             unicorn       \
-             unicorn_rails
+set -l execs \
+  annotate      \
+  cap           \
+  capify        \
+  cucumber      \
+  dashing       \
+  guard         \
+  kitchen       \
+  middleman     \
+  nanoc         \
+  puma          \
+  rackup        \
+  rainbows      \
+  rake          \
+  rspec         \
+  rubocop       \
+  ruby          \
+  shotgun       \
+  sidekiq       \
+  spec          \
+  spinach       \
+  spork         \
+  thin          \
+  thor          \
+  unicorn       \
+  unicorn_rails
 
 if set -q bundler_plugin_execs
   set execs $execs $bundler_plugin_execs
